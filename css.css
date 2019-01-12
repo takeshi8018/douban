@@ -1,0 +1,861 @@
+/*初始化*/
+*{
+    margin:0px;
+    padding:0px;
+    list-style-type:none;
+    text-decoration:none;
+}
+
+/*第一部分导航条*/
+.nav{
+    width:100%;
+    height:50px;
+    background-color:#424242;
+    /*position:relative;*/
+}
+/*左边导航栏*/
+.nav-l{
+    width:770px;
+    height:50px;
+    /*background-color:aquamarine;*/
+    float:left;
+
+}
+.nav-l-ul>li{
+    display:inline-block;
+    width:60px;
+    height:50px;
+    line-height:50px;
+    font-size:16px;
+
+}
+.nav-l-ul>li a{
+    color:white;
+
+}
+/*右边导航栏*/
+.nav-r{
+    width:500px;
+    height:50px;
+    /*background-color:darkseagreen;*/
+    float:right;
+}
+.nav-r-ul>li{
+    display:inline-block;
+    width:100px;
+    height:50px;
+    line-height:50px;
+    font-size:16px;
+}
+.nav-r-ul>li a{
+    color:white;
+
+}
+#nav-r-load{
+    width:200px;
+}
+/*清除浮动*/
+/*nav::after{*/
+    /*content:"";*/
+    /*display:block;*/
+    /*clear:both;*/
+/*}*/
+
+/*顶部下边的logo和搜索框*/
+.part1-center{
+    width:100%;
+    background-color:lightblue;
+}
+.nav-center{
+    width:1060px;
+    height:100px;
+    margin:0 auto;
+    background-color:lightblue;
+}
+/*左边的logo*/
+.logo{
+   width:180px;
+    height:100px;
+    /*background-color: #424242;*/
+    float:left;
+}
+.logo img{
+    width:180px;
+    height:50px;
+    margin:20px 0px;
+    /*float:left;*/
+
+}
+/*右边的搜索框*/
+.search-l{
+    width:450px;
+    height:30px;
+    font-size:16px;
+    text-indent:2em;
+    /*设置两个框的border为0 */
+    border:none;
+    margin:30px 0px 10px 40px;
+}
+.search-r{
+    width:100px;
+    height:30px;
+    /*设置两个框的border为0 */
+    border:none;
+}
+   /*下边导航条*/
+.part1-bottom{
+    width:100%;
+    background-color:lightblue;
+    border-top:1px solid lightgray;
+}
+.nav-bottom{
+    width:1060px;
+    height:50px;
+    background-color:lightblue;
+    margin:0 auto;
+
+}
+.nav-bottom-ul{
+width:850px;
+}
+.nav-bottom-ul>li{
+    display:inline-block;
+    width:75px;
+    height:50px;
+    font-size:16px;
+    line-height:50px;
+    text-align: center;
+
+}
+.nav-bottom-ul>li>a{
+    color:cadetblue;
+}
+#movies{
+    width:110px;
+}
+#nav-bottom-20171,#nav-bottom-20172{
+    width:135px;
+}
+.nav-bottom-ul>li>a:hover{
+    background-color:cadetblue;
+    color:#fff;
+
+}
+/*清除浮动*/
+.nav::after{
+content:"";
+display:block;
+clear:both;
+}
+                                                             /*页面主体*/
+.main{
+    width:1040px;
+    margin:0 auto;
+}
+      /*左边部分*/
+.main-l{
+    width:675px;
+    background-color:#fff;
+    /*height:2000px;*/
+    float:left;
+}
+.main::after{
+    content:"";
+    clear:both;
+    display:block;
+}
+/*第一部分上面导航*/
+.subnav{
+    width:675px;
+    height:50px;
+    background-color:#fff;
+    box-sizing:border-box;
+    margin-top:30px;
+    line-height:50px;
+    border-bottom:1px solid lightgray;
+}
+.subnav>p{
+  display:inline-block;
+    font-size:13px;
+     padding:0 15px;
+}
+.subnav>p>a{
+    color:#9b9b9b;
+
+}
+.subnav>p>a:hover{
+    background-color:cadetblue;
+    color:#fff;
+}
+.subnav>p>a>span{
+    font-size:6px;
+    /*设置字符间距*/
+    letter-spacing:-2px;
+}
+
+.subnav>span{
+    display:inline-block;
+    font-size:18px;
+    color:#424242;
+    font-weight:bolder;
+}
+.subnav-r{
+    width:100px;
+    height:50px;
+    /*background-color:aquamarine;*/
+    float:right;
+}
+.btnLeft{
+    width:25px;
+    height:25px;
+    border-radius:50%;
+    border:none;
+    margin-right:5px;
+    background-color:cadetblue;
+}
+.btnRight{
+    width:25px;
+    height:25px;
+    border-radius:50%;
+    border:none;
+    background-color:cadetblue;
+}
+/*五个图片*/
+
+/*右边部分*/
+.main-r{
+    width:300px;
+    /*background-color:darksalmon;*/
+    height:2000px;
+    float:right;
+}
+.main::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.part1{
+    width:675px;
+    height:240px;
+    /*background-color: fuchsia;*/
+}
+.p1-1{
+    width:115px;
+    height:240px;
+    float:left;
+    margin:10px 20px 0 0;
+}
+.p1-1 h5{
+    font-size:13px;
+    height:20px;
+    line-height:20px;
+    font-weight:400;
+    /*溢出容器打点显示*/
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    margin:5px 25px;
+}
+.p1-1 span{
+    font-size:13px;
+    line-height:20px;
+    height:20px;
+
+}
+.p1-1 input{
+    display:inline-block;
+    width:100px;
+    height:20px;
+    margin:auto;
+    background-color:cadetblue;
+    border:none;
+    text-align:center;
+    line-height:20px;
+}
+.star{
+    /*设置字符间距*/
+    letter-spacing:10px;
+}
+.p1{
+    width:115px;
+    height:160px;
+}
+.part1::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+/*金马创投会*/
+.part2-p{
+    width:675px;
+    height:120px;
+    margin-top:40px;
+    background-color:blue;
+}
+.part2-p img{
+    width:675px;
+    height:120px;
+}
+/*第二个导航条*/
+.subnav2{
+    width:675px;
+    height:70px;
+    /*background-color:darksalmon;*/
+    line-height:70px;
+    border-bottom:1px solid lightgray;
+}
+.subnav2 span{
+    display:inline-block;
+    font-size:16px;
+    font-weight:500;
+    margin-right:10px;
+
+}
+.subnav2-l ul{
+    list-style:none;
+    display:inline-block;
+    height:13px;
+    /*line-height:70px;*/
+}
+.subnav2-l ul>li{
+    display:inline-block;
+}
+.subnav2-l ul>li a{
+    color:gray;
+    font-size:13px;
+    display:inline-block;
+}
+.subnav2-l ul>li a:hover{
+    background-color:cadetblue;
+    color:#fff;
+}
+.subnav2-r{
+    width:100px;
+    height:70px;
+}
+.subnav-a{
+    margin-left:150px;
+    display:inline-block;
+    font-size:13px;
+
+}
+.subnav-a:hover{
+    background-color:cadetblue;
+    color:#fff;
+}
+.subnav-a span{
+    font-size:6px;
+    /*设置字符间距*/
+    letter-spacing:-2px;
+}
+/*第二排图片*/
+.part2-p2 ul li{
+    margin-top:10px;
+    margin-right:15px;
+    display:inline-block;
+    width:115px;
+    height:220px;
+}
+.part2-p2 ul li img{
+    width:115px;
+    height:160px;
+}
+.part2-p2 span{
+    font-size:13px;
+    color:cadetblue;
+    display:inline-block;
+}
+.part2-p2 strong{
+    font-size:13px;
+    color:darkred;
+}
+/*第三个导航条*/
+.subnav3{
+    width:675px;
+    height:70px;
+    /*background-color:rosybrown;*/
+    border-bottom:1px solid lightgray;
+}
+.subnav3 span{
+    font-size:16px;
+    color:#424242;
+    line-height:70px;
+}
+.subnav3 ul{
+   display:inline-block;
+}
+.subnav3>ul>li{
+    font-size:13px;
+    display:inline-block;
+
+}
+.subnav3>ul>li>a{
+    font-size:13px;
+    display:inline-block;
+    color:gray;
+    /*background-color:aqua;*/
+}
+.subnav3>ul>li>a:hover{
+    background-color:cadetblue;
+    color:#fff;
+}
+.subnav3-a{
+    font-size:13px;
+    margin-left:150px;
+
+}
+.subnav3-a span{
+    font-size:6px;
+    letter-spacing:-2px;
+
+}
+/*第三行图片*/
+.part2-p3-top{
+    width:675px;
+    height:220px;
+    background-color:#a8c598;
+
+}
+.part2-top{
+    width:115px;
+    height:160px;
+    float:left;
+    margin-right:20px;
+    text-align:center;
+}
+.part2-top span{
+    font-size:13px;
+    color:cadetblue;
+}
+.part2-top strong{
+    font-size:13px;
+    color:darkred;
+}
+
+.part2-top img{
+    width:115px;
+    height:160px;
+}
+.part2-p3-bottom{
+    width:675px;
+    height:220px;
+    background-color:#a8c598;
+}
+/*热门推荐*/
+.tuijian{
+    width:675px;
+    height:50px;
+    /*background-color:burlywood;*/
+    margin-top:30px;
+    border-bottom:1px solid gray;
+}
+.tuijian>span{
+    font-size:16px;
+    line-height:50px;
+    font-weight:bold;
+}
+.tuijian-r{
+    width:100px;
+    height:50px;
+    font-size:13px;
+    float:right;
+    line-height:50px;
+}
+.tuijian-r p{
+    display:inline-block;
+    width:20px;
+    height:20px;
+    /*background-color:aqua;*/
+    margin:15px 5px 10px 5px;
+
+}
+.tuijian-r>strong{
+    display:inline-block;
+    font-size:13px;
+    /*width:25px;*/
+    /*height:25px;*/
+    padding-top:5px;
+    /*line-height:50px;*/
+
+    /*调整文字和图片的对齐格式*/
+    vertical-align:15px;
+}
+.tuijian-r .tuijian-r-l{
+    width:20px;
+    height:20px;
+
+    /*background-color:#a8c598;*/
+    background-image:url(img/slide_swithc_2.png);
+    background-repeat:no-repeat;
+}
+.tuijian-r .tuijian-r-r{
+    background-image:url(img/slide_swithc_2.png);
+    background-repeat:no-repeat;
+    background-position:-20px 0px;
+}
+/*宫崎骏图片*/
+.carton{
+    width:675px;
+    height:300px;
+    background-color:#3377AA;
+}
+.carton-l{
+    width:350px;
+    height:300px;
+    /*background-color:aquamarine;*/
+    float:left;
+}
+.carton-l img{
+    width:350px;
+    height:300px;
+}
+.carton-r{
+    width:325px;
+    height:300px;
+    background-color:whitesmoke;
+    float:left;
+}
+.carton-r h2{
+    width:325px;
+    height:50px;
+    /*line-height:50px;*/
+    margin-top:45px;
+    font-size:21px;
+    font-weight:500;
+}
+.carton-r p{
+    font-size:16px;
+    width:325px;
+    height:50px;
+    line-height:50px;
+    margin-top:20px;
+}
+/*影评栏目*/
+.filmReview{
+    width:675px;
+    height:850px;
+    /*background-color:aquamarine;*/
+}
+.filmReview::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+/*影评导航*/
+.filmReview-nav{
+    width:675px;
+    height:50px;
+    /*background-color:antiquewhite;*/
+    border-bottom:1px solid gray;
+    margin-top:30px;
+}
+.filmReview-nav>strong{
+    font-size:16px;
+    font-weight:500;
+    display:inline-block;
+    margin-right:20px;
+    line-height:50px;
+
+}
+.filmReview-nav a{
+    color:cadetblue;
+    display:inline-block;
+    margin-right:18px;
+    font-size:13px;
+}
+.filmReview-nav a:hover{
+    background-color:cadetblue;
+    color:white;
+}
+.filmReview-nav a>span{
+    font-size:6px;
+    letter-spacing:-2px;
+}
+/*清除浮动*/
+.filmReview-nav::after{
+    content:"";
+    display:block;
+    clear:both;
+                 }
+/*纵横四海的影评*/
+.filmReview-1{
+    width:675px;
+    height:200px;
+    /*background-color:coral;*/
+    border-bottom:1px solid gray;
+}
+.filmReview-1>img{
+    width:100px;
+    height:150px;
+    float:left;
+    margin-top:20px;
+}
+.filmReview-l-con{
+    width:550px;
+    height:200px;
+    /*background-color: #8b8a7f;*/
+    float:left;
+    margin-left:10px;
+}
+.filmReview-l-con>a{
+    font-size:16px;
+    color:cadetblue;
+    display:inline-block;
+    margin-top:30px;
+    line-height:30px;
+
+}
+.filmReview-l-con>h5>a{
+    font-size:13px;
+    line-height:20px;
+    display:inline-block;
+    color:darkgray;
+
+}
+.filmReview-l-con a:hover{
+    background-color:cadetblue;
+    color:white;
+}
+.filmReview-l-con>h5>span{
+    display:inline-block;
+    margin:0 10px
+}
+.filmReview-l-con>p{
+    width:550px;
+    height:60px;
+    font-size:13px;
+    line-height:20px;
+    margin:10px 0px;
+    /*border:1px solid red;*/
+    /*white-space:nowrap;*/
+    /*overflow:hidden;*/
+    /*text-overflow:ellipsis;*/
+}
+.filmReview-l-con>p>a{
+    font-size:13px;
+    color:cadetblue;
+}
+/*最后一个影评*/
+.filmReview-2>img{
+    width:100px;
+    height:150px;
+    float:left;
+    margin-top:20px;
+}
+.filmReview-2{
+    width:675px;
+    height:200px;
+    /*background-color:coral;*/
+    /*border-bottom:1px solid gray;*/
+    /*margin-bottom:100px;*/
+}
+
+/*清除浮动*/
+.filmReview-1::after{
+    content:"";
+    clear:both:
+    display:block;
+}
+
+
+/*清除浮动*/
+.carton::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+/*右边部分*/
+.title-top{
+    width:300px;
+    height:50px;
+    font-size:16px;
+    background-color:gray;
+    text-indent:2em;
+    margin:10px 0;
+}
+.title-top a{
+    line-height:50px;
+
+}
+/*一周口碑榜*/
+.bangdan{
+    width:300px;
+    height:50px;
+    line-height:50px;
+    border-bottom:1px solid gray;
+}
+.bangdan strong{
+    display:inline-block;
+    font-size:16px;
+    margin-right:20px;
+}
+.bangdan a{
+    font-size:13px;
+    color:cadetblue;
+}
+.bangdan a:hover{
+    color:white;
+    background-color:cadetblue;
+}
+.bangdan span{
+    font-size:6px;
+    letter-spacing:-2px;
+}
+.list{
+    /*list-style:none;*/
+}
+.list li{
+    font-size:13px;
+    line-height:36px;
+   border-bottom:1px solid gray;
+
+}
+.list li a{
+    color:cadetblue;
+}
+.list li a:hover{
+    color:white;
+    background-color:cadetblue;
+}
+/*广告2*/
+.guangao2{
+    /*width:300px;*/
+    /*heigh:300px;*/
+    margin-top:40px;
+}
+/*热门豆列*/
+.hot h5{
+    font-size:16px;
+    line-height:50px;
+    border-bottom:1px solid gray;
+}
+.hot p{
+    font-size:13px;
+    line-height:40px;
+    border-bottom:1px solid gray;
+
+}
+.hot p a{
+    color:cadetblue;
+}
+.hot p span{
+    display:inline-block;
+    text-align:right;
+   margin-left:80px;
+}
+#tuijian2{
+    margin-left:140px;
+}
+.hot p a:hover{
+    color:white;
+    background-color:cadetblue;
+}
+/*合作联系*/
+.hezuo{
+    margin-top:40px;
+    width:300px;
+    height:200px;
+    /*background-color:aquamarine;*/
+}
+.hezuo h5{
+    font-size:16px;
+    line-height:50px;
+    border-bottom:1px solid gray;
+}
+.email-movie{
+    width:300px;
+    height:50px;
+    margin-top:40px;
+}
+.email-movie p{
+    font-size:13px;
+    line-height:26px;
+
+}
+/*联系我们*/
+.lianxi div{
+    width:50px;
+    height:150px;
+    float:left;
+    margin-left:10px;
+}
+.lianxi div img{
+    width:45px;
+    height:45px;
+}
+.lianxi div span{
+    font-size:13px;
+    text-align:center;
+    color:cadetblue;
+}
+/*清除浮动*/
+.lianxi::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+/*豆瓣日历*/
+.calendar{
+    width:300px;
+    height:140px;
+    background-color:whitesmoke;
+}
+.calendar>img{
+    width:120px;
+    height:100px;
+    margin:15px 0;
+    float:left;
+
+}
+.calendar-r{
+    width: 170px;
+    height:100px;
+    float:right;
+    /*background-color:whitesmoke;*/
+}
+/*.calendar-r>p>span{*/
+    /*width:1px;*/
+    /*height: 10px;*/
+     /*border:1px solid #9b9b9b;*/
+/*}*/
+.calendar-r p{
+    font-size:13px;
+    color:#9b9b9b;
+    line-height:20px;
+
+}
+.calendar-r>p>a{
+    color:cadetblue;
+    display:inline-block;
+    margin-top:50px;
+}
+
+/*最后底部部分*/
+.bottom{
+    width: 1060px;
+    height:40px;
+    /*background-color:aqua;*/
+    line-height:40px;
+    margin:100px auto;
+     border-top:1px solid gray;
+}
+.bottom>p{
+    font-size:13px;
+    color:dimgray;
+    float:left;
+}
+.bottom-ul{
+    list-style:none;
+    float:right;
+}
+.bottom-ul li{
+    display:inline-block;
+    font-size:14px;
+}
+.bottom-ul li a{
+    color:cadetblue;
+}
+.bottom-ul li a:hover{
+    background-color:cadetblue;
+    color:white;
+}
